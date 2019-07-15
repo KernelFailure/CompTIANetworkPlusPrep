@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">CompTIA Network Plus Prep</string>
+    <string name="submit_answer">Submit Answer</string>
+    <string name="sample_question">This is a sample question. Answer One is the correct answer for now.  All others are false for testing</string>
+    <string name="answer_1_1">I am answer One</string>
+    <string name="answer_1_2">I am answer Two</string>
+    <string name="answer_1_3">I am answer Three</string>
+    <string name="answer_1_4">I am answer Four</string>
+</resources>

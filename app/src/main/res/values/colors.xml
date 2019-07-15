@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#008577</color>
+    <color name="colorPrimaryDark">#00574B</color>
+    <color name="colorAccent">#D81B60</color>
+
+    <color name="answerChoiceIdle">#778899</color>
+
+    <color name="submitAnswerNotAvailable">#D3D3D3</color>
+    <color name="submitAnswerAvailable">#FFD700</color>
+    <color name="answerCorrect">#32CD32</color>
+    <color name="answerIncorrect">#FF0000</color>
+</resources>

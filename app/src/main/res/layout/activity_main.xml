@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:paddingLeft="20dp"
+    android:paddingRight="20dp"
+    android:paddingTop="15dp"
+    android:paddingBottom="15dp">
+
+    <RelativeLayout
+        android:id="@+id/relQuestion"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/colorAccent">
+
+        <TextView
+            android:id="@+id/tvQuestion"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="5dp"
+            android:textSize="20sp"
+            android:text="@string/sample_question"/>
+
+    </RelativeLayout>
+
+    <android.support.v7.widget.GridLayout
+        android:id="@+id/gridAnswerChoices"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/relQuestion"
+        android:layout_above="@id/btnSubmit"
+        app:columnCount="2"
+        app:rowCount="2"
+        android:layout_margin="10dp">
+
+        <TextView
+            android:id="@+id/tvAnswerOne"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            app:layout_columnWeight="1"
+            app:layout_rowWeight="1"
+            app:layout_gravity="fill"
+            android:gravity="center"
+            android:text="@string/answer_1_1"
+            android:padding="10dp"
+            android:onClick="answerHighlighted"
+           />
+
+        <TextView
+            android:id="@+id/tvAnswerTwo"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            app:layout_columnWeight="1"
+            app:layout_rowWeight="1"
+            app:layout_gravity="fill"
+            android:gravity="center"
+            android:text="@string/answer_1_2"
+            android:padding="10dp"
+            android:onClick="answerHighlighted" />
+
+        <TextView
+            android:id="@+id/tvAnswerThree"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            app:layout_columnWeight="1"
+            app:layout_rowWeight="1"
+            app:layout_gravity="fill"
+            android:gravity="center"
+            android:text="@string/answer_1_3"
+            android:padding="10dp"
+            android:onClick="answerHighlighted" />
+
+        <TextView
+            android:id="@+id/tvAnswerFour"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            app:layout_columnWeight="1"
+            app:layout_rowWeight="1"
+            app:layout_gravity="fill"
+            android:gravity="center"
+            android:text="@string/answer_1_4"
+            android:padding="10dp"
+            android:onClick="answerHighlighted" />
+
+
+    </android.support.v7.widget.GridLayout>
+
+    <Button
+        android:id="@+id/btnSubmit"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:background="@color/submitAnswerNotAvailable"
+        android:text="@string/submit_answer"
+        android:enabled="false"
+        android:onClick="checkAnswer"/>
+
+</RelativeLayout>
