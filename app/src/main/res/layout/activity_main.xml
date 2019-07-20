@@ -22,7 +22,7 @@
             android:layout_height="wrap_content"
             android:padding="5dp"
             android:textSize="20sp"
-            android:text="@string/sample_question"/>
+            android:text="@string/sample_question_1"/>
 
     </RelativeLayout>
 
@@ -43,10 +43,9 @@
             app:layout_columnWeight="1"
             app:layout_rowWeight="1"
             app:layout_gravity="fill"
-            android:gravity="center"
             android:text="@string/answer_1_1"
-            android:padding="10dp"
             android:onClick="answerHighlighted"
+            style="@style/AnswerChoiceTheme"
            />
 
         <TextView
@@ -56,10 +55,10 @@
             app:layout_columnWeight="1"
             app:layout_rowWeight="1"
             app:layout_gravity="fill"
-            android:gravity="center"
             android:text="@string/answer_1_2"
-            android:padding="10dp"
-            android:onClick="answerHighlighted" />
+            android:onClick="answerHighlighted"
+            style="@style/AnswerChoiceTheme"
+            />
 
         <TextView
             android:id="@+id/tvAnswerThree"
@@ -68,10 +67,10 @@
             app:layout_columnWeight="1"
             app:layout_rowWeight="1"
             app:layout_gravity="fill"
-            android:gravity="center"
             android:text="@string/answer_1_3"
-            android:padding="10dp"
-            android:onClick="answerHighlighted" />
+            android:onClick="answerHighlighted"
+            style="@style/AnswerChoiceTheme"
+            />
 
         <TextView
             android:id="@+id/tvAnswerFour"
@@ -80,10 +79,9 @@
             app:layout_columnWeight="1"
             app:layout_rowWeight="1"
             app:layout_gravity="fill"
-            android:gravity="center"
             android:text="@string/answer_1_4"
-            android:padding="10dp"
-            android:onClick="answerHighlighted" />
+            android:onClick="answerHighlighted"
+            style="@style/AnswerChoiceTheme"/>
 
 
     </android.support.v7.widget.GridLayout>

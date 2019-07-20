@@ -8,4 +8,13 @@
         <item name="colorAccent">@color/colorAccent</item>
     </style>
 
+    <style name="AnswerChoiceTheme" parent="@android:style/Widget.TextView">
+        <item name="android:padding">20dp</item>
+        <item name="android:background">@color/answerChoiceIdle</item>
+        <item name="android:textSize">30sp</item>
+        <item name="android:layout_margin">10dp</item>
+        <item name="android:gravity">center</item>
+    </style>
+
 </resources>
+
